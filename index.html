@@ -53,6 +53,8 @@
 						<div class="item-overlay opacity">
 							<h2 class="card-title title">Cool Title</h2>
 							<button type="button" id="btn-share" class="btn btn-primary"><i class="fa fa-share-alt"></i> Bagikan </button>
+							<button type="button" id="btn-link" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> </button>
+							<button type="button" id="btn-download" class="btn btn-primary"><i class="fas fa-download"></i> </button>
 						</div>
     			</div>
     			<div class="card card-pin">
@@ -253,6 +255,7 @@
     </main>
 	<script src="assets/js/app.js"></script>
     <script src="assets/js/theme.js"></script>
+	<script src="assets/js/additional.js"></script>
 
     <footer class="footer pt-5 pb-5 text-center">
         
@@ -281,19 +284,4 @@
         
     </footer>    
 </body>
-<script>
-  window.addEventListener('load', function() {
-    if(!navigator.share) {
-      document.querySelector('.share-container').innerHTML = 'Web Share API not supported in this browser';
-      return;
-    }
-    document.getElementById('btn-share').addEventListener('click', function() {
-      navigator.share({
-        title: 'Check out XI RPL 1 project',
-        text: 'Its really cool',
-        url: 'https://harusasaki.github.io/',
-      });
-    });
-  });
-</script>
 </html>
