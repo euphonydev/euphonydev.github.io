@@ -115,21 +115,50 @@ footer.footer {
   -ms-transform: translate(-50%, -50%); }
 
   .btn-primary {
+  border-radius: 16px;
+  border: 0px;
   padding: 0.4em;
-  color: white;
   display: inline-block;
-  max-width: 40%;
-  height: auto;
+  max-width: 60%;
   position: absolute;
-  margin-right: 0.75em;
+  margin-left: 0.75em;
   margin-top: 0.75em;
   margin-bottom: 0.75rem;
-  right: 0;
-  top: 0;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
+
+  #btn-link {
+  color: #000000;
+  background-color: #f1f1f1;
+  max-width: 60%;
+  height: 2.4em;
+  margin-left: 0.75em;
+  left: 0;
+  bottom: 0; }
+
+  #btn-download {
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+  color: #000000;
+  background-color: #f1f1f1;
+  max-width: 60%;
+  margin-right: 0.75em;
+  right: 0;
+  bottom: 0; }
+
+  #btn-download:focus, #btn-download.focus, #btn-link:focus, #btn-link.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #d9d9d9;
+  box-shadow: 0 0 0 0.2rem #d9d9d9; }
+  
+  #btn-share {
+  font-size-adjust: 1.2rem;
+  height: 2.5rem;
+  margin-right: 0.75em;
+  right: 0;
+  top: 0; }
 
 /* line 66, src/assets/scss/theme.scss */
 .card-pin:hover .card-title {
