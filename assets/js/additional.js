@@ -1,9 +1,11 @@
-window.addEventListener('load', function() {
-    document.getElementsByClassName('btn-share').addEventListener('click', function() {
-      navigator.share({
-        title: 'Check out Euphony Dev. project',
-        text: 'Check it out! is very cool!',
+document.getElementById("#btn-share").addEventListener("click", function() {
+  if (navigator.share) {
+    navigator.share({
+        title: 'Ayo cek project dari Euphony Dev.',
+        text: 'Ini sangatlah kemren!',
         url: 'https://euphonydev.github.io/',
-      });
-    });
-  });
+      })
+      .then(() => console.log('Berhasil membagikan'))
+      .error((error) => console.error('Tidak dapat membagikan link', error))
+  }
+});
