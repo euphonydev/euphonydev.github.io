@@ -6,6 +6,32 @@ body {
 img {
   max-width: 100%; }
 
+.form-control {
+  padding:5%;
+  margin:5%;
+  height: 60%;
+  width: 380%; 
+  font-size: 18px;
+  border-radius: 18px;
+  background-color:rgba(211, 210, 210, 0.527) !important;
+}
+.form-control::placeholder {
+color: rgb(80, 80, 80);
+}
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 25px;
+  margin-top: -13px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
 /* line 5, src/assets/scss/theme.scss */
 a, .a:hover {
   -webkit-transition: all 0.2s;
