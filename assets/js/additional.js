@@ -5,9 +5,9 @@ window.addEventListener('load', function() {
     }
     document.getElementById('btn-share').addEventListener('click', function() {
       navigator.share({
-        title: 'Check out XI RPL 1 project',
-        text: 'Its really cool',
-        url: 'https://harusasaki.github.io/',
+        title: 'Check out Euphony Dev. project',
+        text: 'Check it out! is very cool!',
+        url: 'https://euphonydev.github.io/',
       });
     });
   });
