@@ -12,7 +12,7 @@ img {
   height: 60%;
   width: 380%; 
   font-size: 18px;
-  border-radius: 16px;
+  border-radius: 18px;
   background-color:rgba(211, 210, 210, 0.527) !important;
 }
 .form-control::placeholder {
