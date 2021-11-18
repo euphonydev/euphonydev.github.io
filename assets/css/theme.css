@@ -156,10 +156,10 @@ footer.footer {
   text-overflow: ellipsis; }
 
   #btn-link {
+  padding: 0.6em;
   color: #000000;
   background-color: #f1f1f1;
   max-width: 60%;
-  height: 2.4em;
   margin-left: 0.75em;
   left: 0;
   bottom: 0; }
